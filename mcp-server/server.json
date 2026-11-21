@@ -3,7 +3,7 @@
   "name": "com.ad-o-matic/adomatic",
   "title": "Ad-o-matic Free Mobile App Cross-Promotion",
   "description": "Free 1-line P2P mobile app cross-promotion (Android, iOS, Flutter, React Native). Zero tracking.",
-  "version": "5.8.2",
+  "version": "5.8.3",
   "websiteUrl": "https://ad-o-matic.com",
   "repository": {
     "url": "https://github.com/ad-o-matic/ad-o-matic-sdk",
