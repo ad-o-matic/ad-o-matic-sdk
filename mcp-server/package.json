@@ -5,7 +5,7 @@
   "description": "Zero-dependency MCP server for Ad-o-matic: 1-line free P2P mobile app cross-promotion for Android, iOS, Flutter, React Native, and WebView apps.",
   "main": "index.js",
   "bin": {
-    "adomatic-mcp": "./index.js"
+    "adomatic-mcp": "index.js"
   },
   "files": [
     "index.js",
