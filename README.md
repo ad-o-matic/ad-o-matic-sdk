@@ -3,6 +3,7 @@
 [![Ad-o-matic Genesis](https://ad-o-matic.com/badge/genesis.svg)](https://ad-o-matic.com)
 [![Zero-Tracking P2P](https://ad-o-matic.com/badge/zero-tracking.svg)](https://ad-o-matic.com/privacy.html)
 [![Official MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.ad--o--matic%2Fadomatic-000080)](https://registry.modelcontextprotocol.io/v0.1/servers?search=ad-o-matic)
+[![Ad-o-matic MCP connector](https://glama.ai/mcp/connectors/com.ad-o-matic/ad-o-matic/badges/score.svg)](https://glama.ai/mcp/connectors/com.ad-o-matic/ad-o-matic)
 
 ![Ad-o-matic 1-Line Integration Demo](./assets/ad-o-matic-demo.gif)
 
@@ -40,7 +41,18 @@ Add the hosted Streamable HTTP MCP server (published in the Official MCP Registr
 }
 ```
 
-Or connect via `mcp-remote` / zero-dependency local Node stdio bridge (`sdk/adomatic-mcp.js`):
+Or run via npm (`adomatic-mcp`), `mcp-remote`, or the zero-dependency local Node stdio bridge (`sdk/adomatic-mcp.js`):
+
+```json
+{
+  "mcpServers": {
+    "adomatic": {
+      "command": "npx",
+      "args": ["-y", "adomatic-mcp"]
+    }
+  }
+}
+```
 
 ```json
 {
@@ -102,7 +114,7 @@ Drop [`sdk/HouseAdBanner.dart`](./sdk/HouseAdBanner.dart) (`https://ad-o-matic.c
 
 ```dart
 const HouseAdBanner(
-    packageName: 'com.company.myapp',
+    packageName: 'com.acme.invoicer',
     bannerText: 'Fast invoicing for freelancers',
     targetAudience: 'freelancers, solo founders, small businesses, invoicing, 25-44',
 )
@@ -114,7 +126,7 @@ Drop [`sdk/HouseAdBanner.tsx`](./sdk/HouseAdBanner.tsx) (`https://ad-o-matic.com
 
 ```tsx
 <HouseAdBanner
-    appId="com.company.myapp"
+    appId="com.acme.invoicer"
     bannerText="Fast invoicing for freelancers"
     targetAudience="freelancers, solo founders, small businesses, invoicing, 25-44"
 />
@@ -126,7 +138,7 @@ Use [`sdk/ad-widget.js`](./sdk/ad-widget.js):
 
 ```html
 <script src="https://ad-o-matic.com/ad-widget.js"
-        data-app-id="com.company.myapp"
+        data-app-id="com.acme.invoicer"
         data-banner-text="Fast invoicing for freelancers"
         data-target-audience="freelancers, solo founders, small businesses, invoicing, 25-44"></script>
 ```

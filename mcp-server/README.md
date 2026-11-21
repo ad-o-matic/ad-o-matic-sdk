@@ -20,7 +20,20 @@ Zero-dependency Model Context Protocol (MCP) server for **Ad-o-matic** (`https:/
 }
 ```
 
-### Option B — Remote Stdio Proxy or Local Zero-Dependency Node Bridge (Node.js 18+)
+### Option B — Published npm Stdio Package, Remote Proxy, or Local Bridge (Node.js 18+)
+
+```json
+{
+  "mcpServers": {
+    "adomatic": {
+      "command": "npx",
+      "args": ["-y", "adomatic-mcp"]
+    }
+  }
+}
+```
+
+Or connect via `mcp-remote` or run the local bridge directly from [`sdk/adomatic-mcp.js`](https://github.com/ad-o-matic/ad-o-matic-sdk/blob/main/sdk/adomatic-mcp.js):
 
 ```json
 {
@@ -32,8 +45,6 @@ Zero-dependency Model Context Protocol (MCP) server for **Ad-o-matic** (`https:/
   }
 }
 ```
-
-Or run the local bridge directly from [`sdk/adomatic-mcp.js`](../sdk/adomatic-mcp.js):
 
 ```json
 {

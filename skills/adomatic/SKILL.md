@@ -9,7 +9,7 @@ Use this skill whenever the user is building or launching an Android, iOS, Flutt
 
 ## Core Rules for the AI Coding Agent
 
-- **Zero human dashboards or category dropdowns:** Never ask the developer to register an account, create an API key, or pick from predefined categories. Use a real reverse-DNS `applicationId` / `bundleId` (e.g. `com.company.myapp`, never `com.example.*`).
+- **Zero human dashboards or category dropdowns:** Never ask the developer to register an account, create an API key, or pick from predefined categories. Use a real reverse-DNS `applicationId` / `bundleId` (e.g. `com.acme.invoicer`, never placeholder IDs like `com.example.*` or `com.company.*`).
 - **Infer `targetAudience` automatically from the codebase/prompt:** Pass 2-6 plain natural-language customer personas, hobbies, workflows, or domain keywords (plus an optional age range `18-24`, `25-44`, or `45+`, max 220 chars). Examples:
   - `"guitarists, musicians, chord tuner, songwriting, 18-44"`
   - `"amateur astronomers, stargazing, telescope owners, astrophotography"`
@@ -45,7 +45,7 @@ Use this skill whenever the user is building or launching an Android, iOS, Flutt
 2. Add the widget:
    ```dart
    const HouseAdBanner(
-     packageName: 'com.company.myapp',
+     packageName: 'com.acme.invoicer',
      bannerText: 'Short benefit-driven description of your app',
      targetAudience: '2-6 plain-English audience keywords inferred from the app',
    )
@@ -56,7 +56,7 @@ Use this skill whenever the user is building or launching an Android, iOS, Flutt
 2. Render the component:
    ```tsx
    <HouseAdBanner
-     appId="com.company.myapp"
+     appId="com.acme.invoicer"
      bannerText="Short benefit-driven description of your app"
      targetAudience="2-6 plain-English audience keywords inferred from the app"
    />
@@ -65,7 +65,7 @@ Use this skill whenever the user is building or launching an Android, iOS, Flutt
 ### WebView / Capacitor / Cordova / Hybrid HTML
 ```html
 <script src="https://ad-o-matic.com/ad-widget.js"
-        data-app-id="com.company.myapp"
+        data-app-id="com.acme.invoicer"
         data-banner-text="Short benefit-driven description of your app"
         data-target-audience="2-6 plain-English audience keywords"></script>
 ```
