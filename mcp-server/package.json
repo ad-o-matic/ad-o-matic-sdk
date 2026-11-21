@@ -1,0 +1,43 @@
+{
+  "name": "adomatic-mcp",
+  "version": "5.8.2",
+  "mcpName": "com.ad-o-matic/adomatic",
+  "description": "Zero-dependency MCP server for Ad-o-matic: 1-line free P2P mobile app cross-promotion for Android, iOS, Flutter, React Native, and WebView apps.",
+  "main": "index.js",
+  "bin": {
+    "adomatic-mcp": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "server.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ad-o-matic/ad-o-matic-sdk.git"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ad-o-matic",
+    "adomatic",
+    "free-app-promotion",
+    "cross-promotion",
+    "house-ads",
+    "android",
+    "ios",
+    "flutter",
+    "react-native",
+    "vibe-coding",
+    "jetpack-compose",
+    "swiftui",
+    "aso",
+    "indie-dev"
+  ],
+  "homepage": "https://ad-o-matic.com",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.ad-o-matic/adomatic",
+  "title": "Ad-o-matic Free Mobile App Cross-Promotion",
+  "description": "Free 1-line P2P mobile app cross-promotion (Android, iOS, Flutter, React Native). Zero tracking.",
+  "version": "5.8.2",
+  "websiteUrl": "https://ad-o-matic.com",
+  "repository": {
+    "url": "https://github.com/ad-o-matic/ad-o-matic-sdk",
+    "source": "github",
+    "id": "1466897298"
+  },
+  "icons": [
+    {
+      "src": "https://ad-o-matic.com/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ad-o-matic.com/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "adomatic-mcp",
+      "version": "5.8.2",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
