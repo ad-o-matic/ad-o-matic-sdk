@@ -4,6 +4,7 @@
 [![Zero-Tracking P2P](https://ad-o-matic.com/badge/zero-tracking.svg)](https://ad-o-matic.com/privacy.html)
 [![Official MCP Registry](https://img.shields.io/badge/MCP%20Registry-com.ad--o--matic%2Fadomatic-000080)](https://registry.modelcontextprotocol.io/v0.1/servers?search=ad-o-matic)
 [![Ad-o-matic MCP connector](https://glama.ai/mcp/connectors/com.ad-o-matic/ad-o-matic/badges/score.svg)](https://glama.ai/mcp/connectors/com.ad-o-matic/ad-o-matic)
+[![ad-o-matic/ad-o-matic-sdk MCP server](https://glama.ai/mcp/servers/ad-o-matic/ad-o-matic-sdk/badges/score.svg)](https://glama.ai/mcp/servers/ad-o-matic/ad-o-matic-sdk)
 
 ![Ad-o-matic 1-Line Integration Demo](./assets/ad-o-matic-demo.gif)
 
